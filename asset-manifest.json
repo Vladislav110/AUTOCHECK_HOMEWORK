@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AUTOCHECK_HOMEWOR/static/css/main.0488be05.css",
-    "main.js": "/AUTOCHECK_HOMEWOR/static/js/main.7efa195d.js",
+    "main.js": "/AUTOCHECK_HOMEWOR/static/js/main.8123ec6a.js",
     "static/js/787.66cb4309.chunk.js": "/AUTOCHECK_HOMEWOR/static/js/787.66cb4309.chunk.js",
     "index.html": "/AUTOCHECK_HOMEWOR/index.html",
     "main.0488be05.css.map": "/AUTOCHECK_HOMEWOR/static/css/main.0488be05.css.map",
-    "main.7efa195d.js.map": "/AUTOCHECK_HOMEWOR/static/js/main.7efa195d.js.map",
+    "main.8123ec6a.js.map": "/AUTOCHECK_HOMEWOR/static/js/main.8123ec6a.js.map",
     "787.66cb4309.chunk.js.map": "/AUTOCHECK_HOMEWOR/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0488be05.css",
-    "static/js/main.7efa195d.js"
+    "static/js/main.8123ec6a.js"
   ]
 }
