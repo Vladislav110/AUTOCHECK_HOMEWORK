@@ -7,5 +7,10 @@
 }
 
 .hwTitle {
-
+    padding: 70px 0px 20px 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: Montserrat;
+    border-bottom: 1px solid #D9D9D9;
+    z-index: 1200000;
 }
