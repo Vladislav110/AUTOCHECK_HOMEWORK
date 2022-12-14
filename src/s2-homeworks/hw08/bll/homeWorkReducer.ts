@@ -17,7 +17,8 @@ export const homeWorkReducer = (state: UserType[], action: ActionType): UserType
             }
         }
         case 'check': {
-            return state.filter(el => el.age >= 18 ? el : '')
+            const sortAge = state.sort((a, b) => a.name < b.name ? -1 : 1)
+            return sortAge.filter(el => el.age >= 18 ? el : '')
         }
         default:
             return state
