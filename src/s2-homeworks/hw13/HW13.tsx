@@ -40,14 +40,14 @@ const HW13 = () => {
 
             })
             .catch((e) => {
-                if(x === false){
-                    setCode('Код 400!')
-                    setImage(error400)
-                    setInfo('Ты не отправил success  в body  вообще!')
-                } else if (x === undefined){
+                if (x === false) {
                     setCode('Код 500!')
                     setImage(error500)
                     setInfo('Эмитация ошибки на сервере!')
+                } else if (x === undefined) {
+                    setCode('Код 400!')
+                    setImage(error400)
+                    setInfo('Ты не отправил success  в body  вообще!')
                 } else {
                     setCode('Error Unknown!')
                     setImage(errorUnknown)
