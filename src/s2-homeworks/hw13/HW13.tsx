@@ -36,14 +36,14 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setText('...всё ок)')
-                setInfo("код 200 - обычно означает что скорее всего все ок)")
+                setInfo("код 200 - обычно означает что скорее всего всё ок)")
                 setImage(success200)
 
             })
             .catch((e) => {
                 if (x === undefined) {
                     setCode('400')
-                    setText( 'Ты не отправил success  в body  вообще!')
+                    setText( 'Ты не отправил success в body вообще!')
                     setInfo( 'ошибка 400- обычно означает что скорее всего фронт отправил что-то не то на бэк')
                     setImage(error400)
                 } else if (x === false) {
