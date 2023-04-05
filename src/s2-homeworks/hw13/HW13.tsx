@@ -34,28 +34,28 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                setImage(success200)
                 setCode('200')
-                setInfo("Код 200!")
                 setText('...все ок) код 200 - обычно означает что скорее всего все ок)')
+                setInfo("Код 200!")
+                setImage(success200)
 
             })
             .catch((e) => {
                 if (x === false) {
-                    setImage(error400)
                     setCode('400')
-                    setInfo('Ошибка 400!')
                     setText('Ты не отправил success  в body  вообще! ошибка 400- обычно означает что скорее всего фронт отправил что-то не то на бэк')
+                    setInfo('Ошибка 400!')
+                    setImage(error400)
                 } else if (x === undefined) {
-                    setImage(error500)
                     setCode('500')
-                    setInfo('Ошибка 500!')
                     setText('Эмитация ошибки на сервере ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
+                    setInfo('Ошибка 500!')
+                    setImage(error500)
                 } else {
-                    setImage(errorUnknown)
                     setCode('Error!')
-                    setInfo('Network Error')
                     setText('AxiosError')
+                    setInfo('Network Error')
+                    setImage(errorUnknown)
                 }
             })
 
