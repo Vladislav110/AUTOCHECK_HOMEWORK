@@ -42,12 +42,12 @@ const HW13 = () => {
             })
             .catch((e) => {
                 if (x === undefined) {
-                    setCode('Ошибка 500!')
+                    setCode('400')
                     setText('эмитация ошибки на сервере')
                     setInfo('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
                     setImage(error500)
                 } else if (x === false) {
-                    setCode('Ошибка 400!')
+                    setCode('500')
                     setText('Ты не отправил success  в body  вообще!')
                     setInfo('ошибка 400- обычно означает что скорее всего фронт отправил что-то не то на бэк')
                     setImage(error400)
