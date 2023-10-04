@@ -33,6 +33,8 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             <Pagination
                 id={id + '-pagination'}
                 sx={{
+
+
                     // стили для Pagination //
                 }}
                 page={page}
