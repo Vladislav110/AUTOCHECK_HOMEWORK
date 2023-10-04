@@ -24,7 +24,8 @@ const HW13 = () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://samurai.it-incubator.io/api/3.0/homework/test'
+
 
         setCode('')
         setImage('')
@@ -34,17 +35,16 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode('Код 200!')
-                setText('...всё ок)')
-                setInfo("код 200 - обычно означает что скорее всего всё ок)")
-                setImage(success200)
-
+                   setCode('Код 200!')
+                   setText('...всё ок)')
+                   setInfo("код 200 - обычно означает что скорее всего всё ок)")
+                   setImage(success200)
             })
             .catch((e) => {
                 if (x === undefined) {
                     setCode('400')
-                    setText( 'Ты не отправил success в body вообще!')
-                    setInfo( 'ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
+                    setText('Ты не отправил success в body вообще!')
+                    setInfo('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
                     setImage(error400)
                 } else if (x === false) {
                     setCode('500')
